@@ -2,7 +2,19 @@
 
 Adapted from [karlis-vagalis/kratos-selfservice](https://github.com/karlis-vagalis/kratos-selfservice).
 
-Major differences:
+This is a super fast and responsive self-service UI for open source user management system Ory Kratos built in SvelteKit.
+
+### Features
+
+- Disabled flows from Kratos config are considered (e.g. not showing Sign Up option, if Kratos config has that flow disabled)
+- All flows supported: login, logout, signup, recovery, verification, settings
+- Tested self-service methods: password (webauthn, code, totp also supported, but untested)
+- Error, success and info messages
+
+Not supported (at least yet)
+- Languages other than English
+
+### Differences from [karlis-vagalis/kratos-selfservice](https://github.com/karlis-vagalis/kratos-selfservice).
 
 - UI components from [shadcn-svelte](https://shadcn-svelte.com/) where possible, (Tailwind + BitsUI under the hood)
 - TypeScript Svelte throughout
